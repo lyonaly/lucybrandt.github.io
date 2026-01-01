@@ -1,4 +1,4 @@
-export default function Skills({ lang, skillsRef }) {
+export default function skills({ lang, skillsRef }) {
     return (
         <section id="skills" className="skills" ref={skillsRef}>
             <div className="skillsContainer">   

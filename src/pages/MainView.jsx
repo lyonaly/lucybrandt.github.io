@@ -1,5 +1,5 @@
 import Experience from '../components/Experience';
-import Skills from '../components/Skills';
+import skills from '../components/skills';
 import Certificates from '../components/Certificates';
 
 export default function MainView({ lang, aboutRef, experienceRef, skillsRef, certificatesRef, showDetails }) {
@@ -24,7 +24,7 @@ export default function MainView({ lang, aboutRef, experienceRef, skillsRef, cer
                 </article>
             </section>
             <Experience lang={lang} experienceRef={experienceRef} showDetails={showDetails} />
-            <Skills lang={lang} skillsRef={skillsRef} />
+            <skills lang={lang} skillsRef={skillsRef} />
             <Certificates lang={lang}  certificatesRef={certificatesRef} />
         </main>
     );
