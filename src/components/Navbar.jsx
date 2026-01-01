@@ -23,7 +23,7 @@ export default function Navbar({ lang, toggleLang, navigateToSection }) {
                     ))}
                     <li>
                         <button onClick={toggleLang} aria-label="Toggle language">
-                            <img id="lang-switch" src={lang === 'en' ? '/src/assets/german.svg' : '/src/assets/english.svg'} className="flag" alt="flag"/>
+                            <img id="lang-switch" src={lang === 'en' ? 'german.svg' : 'english.svg'} className="flag" alt="flag"/>
                         </button>
                     </li>
                 </ul>

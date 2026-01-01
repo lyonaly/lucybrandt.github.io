@@ -7,7 +7,7 @@ export default function Certificates({ lang, certificatesRef }) {
                 </h1>
                 <section className="certificates-group">
                     <div className="certificate1">
-                        <img className="certificate-item" src="/src/assets/metawebdev_certi.png" alt="Certificate 1"/>
+                        <img className="certificate-item" src="metawebdev_certi.png" alt="Certificate 1"/>
                         <button className="verify-button" onClick={() =>window.open('https://www.coursera.org/account/accomplishments/specialization/EEVK0BX9GMYF') }>
                             {lang === 'de' ? 'Verifizieren' : 'Verify'}
                         </button>

@@ -45,7 +45,7 @@ export default function DetailsView({ lang, hideDetails }) {
                 <section className="experience-detail">
                     <div className="top">
                         <button className="goback" onClick={hideDetails}>
-                            <img src="/src/assets/arrow.png" className="arrow" alt="back" />
+                            <img src="arrow.png" className="arrow" alt="back" />
                         </button>
                         <h1 className="headingdet">{lang === 'de' ? 'Arbeitserfahrung' : 'Experiences'}</h1>
                     </div>

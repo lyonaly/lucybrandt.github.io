@@ -1,6 +1,6 @@
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
-import Certificates from '../components/certificates';
+import Certificates from '../components/Certificates';
 
 export default function MainView({ lang, aboutRef, experienceRef, skillsRef, certificatesRef, showDetails }) {
     const heding = {
@@ -16,7 +16,7 @@ export default function MainView({ lang, aboutRef, experienceRef, skillsRef, cer
     return (
         <main>
             <section id="about" className="aboutme" ref={aboutRef}>
-                <img src="/src/assets/photo.png" className="photo" alt="Lucy" />
+                <img src="photo.png" className="photo" alt="Lucy" />
                 <article className="text-aboutme">
                     <h1 id="heading">{heding[lang]}</h1>
                     <h1>Lucy Brandt</h1>

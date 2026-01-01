@@ -10,31 +10,31 @@ export default function Skills({ lang, skillsRef }) {
                     <div className="divider" />
                     <ul className="skills-list">
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/java.png"/>
+                            <img className="logos" src="java.png"/>
                             Java
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/python.png"/>
+                            <img className="logos" src="python.png"/>
                             Python
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/javascript.png"/>
+                            <img className="logos" src="javascript.png"/>
                             JavaScript
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/typescript.png"/>
+                            <img className="logos" src="typescript.png"/>
                             TypeScript
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/sql.png"/>
+                            <img className="logos" src="sql.png"/>
                             SQL
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/react.png"/>
+                            <img className="logos" src="react.png"/>
                             React
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/bootstrap.png"/>
+                            <img className="logos" src="bootstrap.png"/>
                             Bootstrap
                         </li>
                     </ul>
@@ -45,23 +45,23 @@ export default function Skills({ lang, skillsRef }) {
                     <div className="divider" />
                     <ul className="skills-list">
                           <li className="skills-item">
-                            <img className="logos" src="/src/assets/html.png"/>
+                            <img className="logos" src="html.png"/>
                             HTML
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/css.png"/>
+                            <img className="logos" src="css.png"/>
                             CSS
                         </li>
                         <li className="skills-item">  
-                            <img className="logos" src="/src/assets/rwd.png"/>  
+                            <img className="logos" src="rwd.png"/>  
                             Responsive Webdesign
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/figma.png"/>
+                            <img className="logos" src="figma.png"/>
                             Figma
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/photoshop.png"/>
+                            <img className="logos" src="photoshop.png"/>
                             Photoshop
                         </li>
                     </ul>
@@ -72,11 +72,11 @@ export default function Skills({ lang, skillsRef }) {
                     <div className="divider" />
                     <ul className="skills-list">
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/git.png"/>
+                            <img className="logos" src="git.png"/>
                             Git
                         </li>
                         <li className="skills-item">
-                            <img className="logos" src="/src/assets/powerbi.png"/>
+                            <img className="logos" src="powerbi.png"/>
                             Power BI
                         </li>
                     </ul>
