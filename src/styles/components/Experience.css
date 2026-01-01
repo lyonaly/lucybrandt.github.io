@@ -146,9 +146,8 @@ button.exp-item:active {
     }
     button.exp-item { 
         font-size: 2.2vw; 
-        width: 7vh; 
+        width: fit-content; 
         height: 2.5vh; 
-        margin-right: 2vh; 
     }
     .expContainer { 
         margin-right: 1.5rem;
