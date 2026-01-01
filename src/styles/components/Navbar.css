@@ -92,7 +92,7 @@ nav a:hover {
         gap: 0.75rem; 
     }
     nav a { 
-        font-size: clamp(10px, 3vw, 14px); 
+        font-size: clamp(10px, 2.3vw, 14px); 
     }
     .logo { 
         font-size: clamp(12px, 4vw, 18px);

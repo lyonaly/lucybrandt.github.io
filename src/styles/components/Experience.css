@@ -142,7 +142,7 @@ button.exp-item:active {
         gap: 1rem;
         margin-left: 2vh;
         width: 70%;
-        height: 25vh;
+        height: fit-content;
     }
     button.exp-item { 
         font-size: 2.2vw; 
