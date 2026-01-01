@@ -1,0 +1,100 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3vw;
+    border-bottom: 1px solid var(--line-color);
+    height: auto;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: clamp(20px, 1.2vw, 2vw);
+    font-family: var(--font-main);
+    margin-right: 0;
+    cursor: pointer;
+}
+.logo a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: clamp(11px, 1vw, 1.5vw);
+    color: var(--text-color);            
+    text-decoration: none;              
+}
+
+nav a:hover {
+    text-decoration: underline;             
+}
+
+.flag {
+    margin-top: 0;
+    width: clamp(1.2rem, 1.5vw, 2rem);
+    cursor: pointer;
+    display: block;
+}
+
+
+@media (max-width: 900px) {
+    nav ul { 
+        gap: 2vw; 
+    }
+    .logo { 
+        font-size: clamp(14px, 2.2vw, 20px); 
+    }
+}
+
+@media (max-width: 600px) {
+    nav { 
+        flex-direction: column; gap: 0.5rem;
+        padding: 0.75rem 4vw; 
+    }
+    nav ul { 
+        justify-content: center; 
+        gap: 1rem; 
+    }
+}
+
+@media (max-width: 420px) {
+    nav ul {
+        gap: 0.75rem; 
+    }
+    nav a { 
+        font-size: clamp(10px, 3vw, 14px); 
+    }
+    .logo { 
+        font-size: clamp(12px, 4vw, 18px);
+    }
+}

@@ -1,0 +1,30 @@
+:root {
+    --bg-color: #1D202F;
+    --text-color: #ffffff;
+    --box-color: #161820;
+    --box-outline-color: #ffffff;
+    --line-color: rgba(255, 255, 255, 0.1);
+    --line-colorv2: rgba(255, 255, 255, 0.253);
+    --shadow-color: #444c6e;
+    --button-color: #323545;
+    --button-color-hover: #4e5268;
+    --font-main: system-ui, -apple-system, sans-serif;
+}
+
+html {
+    overflow-y: scroll; 
+    scrollbar-gutter: stable; 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color); 
+    color: var(--text-color);               
+    font-family: var(--font-main);  
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+section {
+    scroll-margin-top: 300px; 
+}

@@ -1,0 +1,115 @@
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 15vw;
+    flex-wrap: wrap;
+}
+
+.photo {
+    margin-top: 0;
+    margin-bottom: 4vh;
+    width: clamp(120px, 17vw, 300px);
+    border-radius: 2px;
+    box-shadow: 
+        0 0 0 0.07vw var(--box-outline-color),       
+        0 0 0 clamp(8px, 0.8vw, 18px) var(--bg-color),       
+        0 0 0 calc(clamp(8px, 0.8vw, 18px) + 0.07vw) var(--box-outline-color);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.photo:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow:
+        0 0 0 0.07vw var(--box-outline-color),       
+        0 0 0 clamp(8px, 0.8vw, 18px) var(--bg-color),       
+        0 0 0 calc(clamp(8px, 0.8vw, 18px) + 0.07vw) var(--box-outline-color),
+        0 0 1.2rem clamp(8px, 1vw, 18px) #444c6e;
+}
+
+.text-aboutme h1 {
+    font-size: 5vh;
+    line-height: 0vh;
+}
+
+.text-aboutme {
+    max-width: 30vw;
+    max-height: 43vh;
+    font-family: var(--font-main);
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descr {
+    margin-top: 2vw;
+}
+
+.subheading {
+    font-size: 5vh;
+}
+
+
+@media (max-width: 1200px) {
+    .photo { 
+        width: clamp(130px, 22vw, 260px); 
+    }
+    .text-aboutme {
+        max-width: 40vw; 
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutme { 
+        gap: 3vw; 
+        margin-top: 23vw; 
+    }
+    .photo { 
+        width: clamp(140px, 25vw, 240px); 
+    }
+    .text-aboutme { 
+        max-width: 55vw; 
+        font-size: 2vw; 
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutme { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1.5rem; 
+        margin-top: 10rem; 
+    }
+    .photo {
+        width: 40vw; 
+    }
+    .text-aboutme { 
+        max-width: 90vw; 
+        text-align: center; 
+        font-size: 3vw; 
+    }
+    .text-aboutme h1 { 
+        font-size: 3.5vh; 
+    }
+}
+
+@media (max-width: 420px) {
+    .aboutme { 
+        gap: 2vh; 
+        margin-top: 8rem; 
+    }
+    .text-aboutme h1 { 
+        font-size: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    .text-aboutme { 
+        width: 79%; 
+        font-size: 1.3vh;
+    }
+    .photo { 
+        margin-bottom: 0; 
+        margin-top: 0; 
+    }
+}
