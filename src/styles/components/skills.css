@@ -20,7 +20,7 @@
     width: 100%;
 }
 
-.divider {
+.divider { 
     height: 1px;
     background-color: var(--line-colorv2);
     width: 60%; 
