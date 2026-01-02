@@ -52,7 +52,7 @@ export default function Skills({ lang, skillsRef }) {
                             <img className="logos" src="css.png"/>
                             CSS
                         </li>
-                        <li className="skills-item">  
+                        <li className="skills-item responsive-item">  
                             <img className="logos" src="rwd.png"/>  
                             Responsive Webdesign
                         </li>

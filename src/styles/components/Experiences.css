@@ -134,7 +134,7 @@
         margin-top: 13vh;
     }
     .headingdet {
-        font-size: 3vh; 
+        font-size: 4vh; 
     }
     .worklist h2 {
         font-size: 2.3vh; 
@@ -144,16 +144,16 @@
         font-size: 1.7vh;
     }
     .worklist li button {
-        font-size: 1vh;
+        font-size: 1.2vh;
         height: 3vh;
         margin-top: 0;
     }
     .job-details h3 {
-        font-size: 1.4vh;
+        font-size: 1.6vh;
     }
     
     .job-details .period {
-        font-size: 1vh;
+        font-size: 1.3vh;
     }
 
     .job-details .tasks {
@@ -177,11 +177,11 @@
     .worklist {
         margin-top: 2vh; 
     }
-    .worklist h2 {
-        font-size: 1.5vh; 
-    }
     ul {
         font-size: 1vh;
+    }
+    li {
+        font-size: 1.5vh;
     }
 
 
