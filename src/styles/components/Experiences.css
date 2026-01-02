@@ -151,11 +151,9 @@
     .job-details h3 {
         font-size: 1.6vh;
     }
-    
     .job-details .period {
         font-size: 1.3vh;
     }
-
     .job-details .tasks {
         font-size: 1.2vh;
         width: 70%;
@@ -170,18 +168,26 @@
         margin-top: 7vh;
         margin-bottom: 1vh;
     }
+    .worklist li button {
+        font-size: 1.5vh;
+    }
+    .job-details h3 {
+        font-size: 2vh;
+        align-self: center;
+        margin-left: 1.5vh;
+    }
+     .job-details .period {
+        font-size: 1.6vh;
+    }
     .headingdet {
-        font-size: 2vh; 
+        font-size: 3vh; 
         margin-bottom: 0vh;
     }
     .worklist {
         margin-top: 2vh; 
     }
-    ul {
-        font-size: 1vh;
-    }
     li {
-        font-size: 1.5vh;
+        font-size: 1.7vh;
     }
 
 
