@@ -10,7 +10,7 @@ export default function Navbar({ lang, toggleLang, navigateToSection }) {
         <header>
             <nav className="navbar">
                 <div className="logo">
-                    <a href="#about" onClick={(e) => navigateToSection('about', e)}>&lt;Lucy Brandt&gt;</a>
+                    <a href="#about" onClick={(e) => navigateToSection('about', e)}>&lt;Lucy Brandt/&gt;</a>
                 </div>
                 <ul className="nav-links">
                     {navContent[lang].map((label, i) => (

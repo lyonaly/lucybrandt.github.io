@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainView from './pages/MainView';
-import DetailsView from './pages/DetailsView';
 
 function App() {
   const [lang, setLang] = useState('de');
@@ -20,14 +19,6 @@ function App() {
 
   function toggleLang() {
     setLang(prev => (prev === 'de' ? 'en' : 'de'));
-  }
-
-  function showDetails() {
-    setView('details');
-  }
-
-  function hideDetails() {
-    setView('main');
   }
 
   function navigateToSection(targetId, e) {
@@ -48,11 +39,7 @@ function App() {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar lang={lang} toggleLang={toggleLang} navigateToSection={navigateToSection}/>
       <div style={{ flex: 1 }}>
-        {view === 'main' ? (
-          <MainView lang={lang} aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} certificatesRef={certificatesRef} showDetails={() => setView('details')}/>
-        ) : (
-          <DetailsView lang={lang} hideDetails={() => setView('main')}/>
-        )}
+        <MainView lang={lang} aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} certificatesRef={certificatesRef} showDetails={() => setView('details')}/>
       </div>
       <Footer lang={lang} footerRef={footerRef} />
     </div>

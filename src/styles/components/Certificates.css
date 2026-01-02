@@ -27,22 +27,27 @@
 }
 
 .verify-button {
+    background: none;
     margin-top: 2vh;
-    align-self: flex-end;
+    border: 2px solid transparent;
+    color: var(--text-color);
     cursor: pointer;
-    height: 4vh;
-    width: 15vh;
+    padding: 1vh 2vw;
+    border-radius: 8px;
+    font-size: 1.7vh;
+    width: fit-content;
+    height: 5vh;
     background-color: var(--button-color);
-    border: #ffffff 1px solid;
+    border: var(--button-border-color) 2px solid;
     color: var(--text-color);
     text-decoration: none;
     border-radius: 10px;
-    font-size: clamp(1.5vh, 1.9vh, 2.5vh);
 }
 
 
 .verify-button:hover {
     background-color: var(--button-color-hover);
+    border: #ffffff 1px solid;
 }
 
 .verify-button:active {

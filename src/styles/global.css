@@ -1,6 +1,7 @@
 :root {
     --bg-color: #1D202F;
     --text-color: #ffffff;
+    --text-colorv2: #61667e;
     --box-color: #161820;
     --box-outline-color: #ffffff;
     --line-color: rgba(255, 255, 255, 0.1);
@@ -8,6 +9,7 @@
     --shadow-color: #444c6e;
     --button-color: #323545;
     --button-color-hover: #4e5268;
+    --button-border-color: #2f2c396d;
     --font-main: system-ui, -apple-system, sans-serif;
 }
 

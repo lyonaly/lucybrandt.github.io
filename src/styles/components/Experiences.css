@@ -1,5 +1,5 @@
 .experience-detail {
-    margin-top: 20vh;
+    margin-top: 30vh;
     display: flex;
     flex-direction: column; 
     align-items: center;    
@@ -41,7 +41,7 @@
     width: fit-content;
     height: 5vh;
     background-color: var(--button-color);
-    border: var(--button-active-color) 2px solid;
+    border: var(--button-border-color) 2px solid;
     color: var(--text-color);
     text-decoration: none;
     border-radius: 10px;
@@ -163,7 +163,7 @@
     .experience-detail {
         margin-left: 0vh; 
         margin-right: 2vh;
-        margin-top: 10vh;
+        margin-top: 1vh;
     }
     .headingdet {
         font-size: 2vh; 

@@ -1,6 +1,6 @@
-import Experience from '../components/Experience';
-import Skills from '../components/skills';
+import Skills from '../components/Skills';
 import Certificates from '../components/Certificates';
+import Experiences from '../components/Experiences';
 
 export default function MainView({ lang, aboutRef, experienceRef, skillsRef, certificatesRef, showDetails }) {
     const heding = {
@@ -23,7 +23,7 @@ export default function MainView({ lang, aboutRef, experienceRef, skillsRef, cer
                     <p id="description" className="descr">{texts[lang]}</p>
                 </article>
             </section>
-            <Experience lang={lang} experienceRef={experienceRef} showDetails={showDetails} />
+            <Experiences lang={lang} experienceRef={experienceRef} showDetails={showDetails} />
             <Skills lang={lang} skillsRef={skillsRef} />
             <Certificates lang={lang}  certificatesRef={certificatesRef} />
         </main>
