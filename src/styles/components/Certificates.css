@@ -41,7 +41,9 @@
     border: var(--button-border-color) 2px solid;
     color: var(--text-color);
     text-decoration: none;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

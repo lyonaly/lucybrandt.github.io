@@ -1,5 +1,5 @@
 .experience-detail {
-    margin-top: 30vh;
+    margin-top: 50vh;
     display: flex;
     flex-direction: column; 
     align-items: center;    
@@ -44,7 +44,9 @@
     border: var(--button-border-color) 2px solid;
     color: var(--text-color);
     text-decoration: none;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .worklist li button:hover {
@@ -85,6 +87,7 @@
     .experience-detail {
         margin-left: 12vh; 
         margin-right: 12vh;
+        margin-top: 26vh;
     }
     .headingdet {
         font-size: 4vh; 
@@ -128,6 +131,7 @@
     .experience-detail {
         margin-left: 4vh; 
         margin-right: 4vh;
+        margin-top: 13vh;
     }
     .headingdet {
         font-size: 3vh; 
@@ -163,10 +167,15 @@
     .experience-detail {
         margin-left: 0vh; 
         margin-right: 2vh;
-        margin-top: 1vh;
+        margin-top: 7vh;
+        margin-bottom: 1vh;
     }
     .headingdet {
         font-size: 2vh; 
+        margin-bottom: 0vh;
+    }
+    .worklist {
+        margin-top: 2vh; 
     }
     .worklist h2 {
         font-size: 1.5vh; 

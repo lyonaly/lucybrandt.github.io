@@ -88,7 +88,7 @@ export default function Experience({ lang, experienceRef }) {
                         </li>
                         <li key="JuniorUni">
                             <button onClick={() => setSelectedJob('JuniorUni')} className={selectedJob === 'JuniorUni' ? 'active' : ''}>
-                                {lang === 'de' ? '3D-Druck Dozentin' : 'Lecturer 3D Printing'}
+                                {lang === 'de' ? '3D-Druck Dozentin' : '3D-Printing Lecturer'}
                             </button>
                         </li>
                         <li key="Klostermarkt">

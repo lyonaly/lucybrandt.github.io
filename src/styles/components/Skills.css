@@ -1,13 +1,13 @@
 .skills-group h3 {
     align-self: flex-start;
     margin-left: 20%;
-    margin-top: 4vw;
+    margin-top: 5vh;
     margin-bottom: 0;
     
 }
 
 .skillsContainer h1 {
-    margin-top: 20rem;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -101,10 +101,10 @@
 
 @media (max-width: 600px) {
     .skills-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        width: 80%;
-        margin-left: 10%;
+        width: 60%;
+        margin-left: 20%;
     }
     .skills-group h3 {
         margin-left: 10%;
@@ -138,7 +138,7 @@
     .skills-item {
         width: 15vw;
         height:15vw;
-        font-size: 0.8vh;
+        font-size: 1vh;
     }
     .skillsContainer h1 {
         font-size: 2vh;
