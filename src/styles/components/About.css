@@ -104,10 +104,12 @@
         font-size: 3.5vh;
         margin-bottom: 2vh;
         margin-top: 3vh;
+        text-align: center;
     }
     .text-aboutme { 
         width: 79%; 
         font-size: 1.9vh;
+        text-align: justify;
     }
     .photo { 
         margin-bottom: 0; 
