@@ -84,10 +84,14 @@
         font-size: 3vh;
         margin-bottom: 0;
         margin-top: 10vh;
+        margin-right: 35%;
     }
     .verify-button {
         font-size: 1.6vh;
         width: fit-content; 
         height: 3.5vh; 
+    }
+    .certificate-item {
+        width: 60vw;
     }
 }
