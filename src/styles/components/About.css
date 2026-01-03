@@ -34,7 +34,6 @@
 }
 
 .text-aboutme {
-    max-width: 30vw;
     max-height: 43vh;
     font-family: var(--font-main);
     margin-top: 0;
@@ -86,12 +85,16 @@
         width: 40vw; 
     }
     .text-aboutme { 
-        max-width: 90vw; 
         text-align: center; 
-        font-size: 3vw; 
+        font-size: 1.9vh; 
+        max-width: 80%;
     }
     .text-aboutme h1 { 
         font-size: 3.5vh; 
+    }
+     .text-aboutme .descr {
+        text-align: justify;
+        width: 100%;
     }
 }
 
@@ -101,19 +104,15 @@
         margin-top: 8rem; 
     }
     .text-aboutme h1 { 
-        font-size: 3vh;
-        margin: 0;
-        margin-right: 0.5ch;
-        line-height: 1.2;
+        font-size: 3.5vh;
+        margin-bottom: 2vh;
+        margin-top: 3vh;
+        text-align: center;
     }
     .text-aboutme { 
         width: 79%; 
         font-size: 1.9vh;
-        text-align: center;
-    }
-    .text-aboutme .descr {
         text-align: justify;
-        margin-top: 2vh;
     }
     .photo { 
         margin-bottom: 0; 
