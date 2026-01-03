@@ -57,6 +57,10 @@
     font-size: 0.8vw;
 }
 
+.skills-item.responsive-item .logos {
+    transform: translateY(6px);
+}
+
 .skills-item:hover { 
     transform: scale(1.2);
     box-shadow: 0 0 1.2rem clamp(2px, 0.1vw, 10px) var(--shadow-color);
@@ -134,11 +138,9 @@
 }
 
 @media (max-width: 420px) {
-    .subheading {
-        font-size: 5vh;
-    }
     .skillsContainer h1 {
         margin-top: 15vh;
+        font-size: 3vh;
     }
     .skills-list {
         grid-template-columns: repeat(3, 1fr);
@@ -156,8 +158,5 @@
     }
     .skills-item.responsive-item {
         font-size: 1vh;
-    }
-    .skillsContainer h1 {
-        font-size: 2vh;
     }
 }
