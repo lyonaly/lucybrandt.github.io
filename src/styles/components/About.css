@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 35%;
 }
 
 .descr {
@@ -68,9 +69,12 @@
     .photo { 
         width: clamp(140px, 25vw, 240px); 
     }
+    .text-aboutme h1 { 
+        font-size: 4vh; 
+    }
     .text-aboutme { 
         max-width: 55vw; 
-        font-size: 2vw; 
+        font-size: 1.8vw; 
     }
 }
 
@@ -79,18 +83,23 @@
         flex-direction: column; 
         align-items: center; 
         gap: 1.5rem; 
-        margin-top: 10rem; 
+        margin-top: 9rem; 
     }
     .photo {
         width: 40vw; 
+        margin-bottom: auto;
     }
     .text-aboutme { 
         text-align: center; 
         font-size: 1.9vh; 
-        max-width: 70%;
+        width: 70%;
+        max-width: 90%;
     }
     .text-aboutme h1 { 
-        font-size: 3.5vh; 
+        font-size: 3.5vh;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        text-align: center;
     }
      .text-aboutme .descr {
         text-align: justify;
@@ -104,14 +113,14 @@
         margin-top: 8rem; 
     }
     .text-aboutme h1 { 
-        font-size: 3.5vh;
-        margin-bottom: 2vh;
+        font-size: 9vw;
+        margin-bottom: 1.5vh;
         margin-top: 3vh;
         text-align: center;
     }
     .text-aboutme { 
-        width: 79%; 
-        font-size: 1.9vh;
+        width: 80%; 
+        font-size: 4.5vw;
         text-align: justify;
     }
     .photo { 
