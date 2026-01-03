@@ -109,12 +109,12 @@
 
 @media (max-width: 420px) {
     .aboutme { 
-        gap: 2vh; 
+        gap: 4vh; 
         margin-top: 8rem; 
     }
     .text-aboutme h1 { 
         font-size: 9vw;
-        margin-bottom: 1.5vh;
+        margin-bottom: 3vh;
         text-align: center;
     }
     .text-aboutme { 
