@@ -142,17 +142,17 @@
     }
     .skills-list {
         grid-template-columns: repeat(3, 1fr);
-        width: 80%;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 15%;
     }
     .skills-group h3 {
         font-size: 2vh;
         margin-top: 3vh;
     }
     .skills-item {
-        width: 20vw;
-        height: 20vw;
-        font-size: 1.5vh;
+        width: 18vw;
+        height: 18vw;
+        font-size: 1.4vh;
     }
     .skills-item.responsive-item {
         font-size: 1vh;
