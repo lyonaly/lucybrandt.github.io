@@ -53,6 +53,14 @@
     line-height: 1.8;
     margin-bottom: 15px;
 }
+.dark-link {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.dark-link:hover {
+    color: #7FBFFF;
+}
 
 @media (max-width: 768px) {
     .privacy-view {
@@ -74,4 +82,5 @@
     .privacy-container h3 {
         font-size: 1.2rem;
     }
+    
 }

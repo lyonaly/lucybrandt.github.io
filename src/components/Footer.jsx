@@ -11,7 +11,7 @@ export default function Footer({ lang, footerRef, navigateToPrivacy }) {
                     <p>{lang === 'de' ? 'Anschrift: ' : 'Address: '}Lucy Brandt, Luxemburger Allee 38, 45481 Mülheim an der Ruhr, Deutschland</p>
                     <p>{lang === 'de' ? 'Telefon: ' : 'Phone: '}+49 157 56313807</p>
                     <div className="footer-links">
-                    <a href="#privacy" onClick={(e) => { e.preventDefault(); navigateToPrivacy(); }} className="footer-link">
+                    <a href="#privacy" onClick={(e) => { e.preventDefault(); navigateToPrivacy(); }} className="dark-link">
                         {lang === 'de' ? 'Datenschutz' : 'Privacy Policy'}
                     </a>
                 </div>
