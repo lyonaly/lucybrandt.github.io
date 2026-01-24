@@ -25,6 +25,13 @@ footer {
     color: #7FBFFF;
 }
 
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
 .footcontainer h2 {
     margin: 0 0 0.5rem 0;
 }

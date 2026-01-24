@@ -1,4 +1,4 @@
-export default function Footer({ lang, footerRef }) {
+export default function Footer({ lang, footerRef, navigateToPrivacy }) {
     return (
         <footer ref={footerRef}>
             <div className="footer-content">
@@ -10,6 +10,11 @@ export default function Footer({ lang, footerRef }) {
                     </p>
                     <p>{lang === 'de' ? 'Anschrift: ' : 'Address: '}Lucy Brandt, Luxemburger Allee 38, 45481 Mülheim an der Ruhr, Deutschland</p>
                     <p>{lang === 'de' ? 'Telefon: ' : 'Phone: '}+49 157 56313807</p>
+                    <div className="footer-links">
+                    <a href="#privacy" onClick={(e) => { e.preventDefault(); navigateToPrivacy(); }} className="footer-link">
+                        {lang === 'de' ? 'Datenschutz' : 'Privacy Policy'}
+                    </a>
+                </div>
                 </div>
                 <p className="copyright">{lang === 'de' ? '© 2025 Lucy Brandt. Alle Rechte vorbehalten.' : '© 2025 Lucy Brandt. All rights reserved.'}</p>
             </div>

@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainView from './pages/MainView';
+import PrivacyView from './pages/PrivacyView';
+import './styles/pages/PrivacyView.css';
 
 function App() {
   const [lang, setLang] = useState('de');
@@ -35,13 +37,21 @@ function App() {
     }, 30);
   }
 
+  function navigateToPrivacy() {
+    setView('privacy');
+  }
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar lang={lang} toggleLang={toggleLang} navigateToSection={navigateToSection}/>
       <div style={{ flex: 1 }}>
-        <MainView lang={lang} aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} certificatesRef={certificatesRef} showDetails={() => setView('details')}/>
+        {view === 'privacy' ? (
+          <PrivacyView lang={lang} />
+        ) : (
+          <MainView lang={lang} aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} certificatesRef={certificatesRef} showDetails={() => setView('details')}/>
+        )}
       </div>
-      <Footer lang={lang} footerRef={footerRef} />
+      <Footer lang={lang} footerRef={footerRef} navigateToPrivacy={navigateToPrivacy} />
     </div>
   );
 }
