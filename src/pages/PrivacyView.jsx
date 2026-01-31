@@ -9,8 +9,8 @@ export default function PrivacyView({ lang }) {
                     <h3>{lang === 'de' ? 'Allgemeine Hinweise' : 'General Information'}</h3>
                     <p>
                         {lang === 'de' 
-                            ? 'Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.'
-                            : 'The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is all data with which you can be personally identified.'}
+                            ? 'Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unter diesem Text aufgeführten Datenschutzerklärung.'
+                            : 'The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data are all data with which you can be personally identified. For detailed information on the subject of data protection, please refer to privacy policy listed below this text.'}
                     </p>
                 </section>
 
@@ -26,8 +26,14 @@ export default function PrivacyView({ lang }) {
                     <h3>{lang === 'de' ? 'Wie erfassen wir Ihre Daten?' : 'How do we collect your data?'}</h3>
                     <p>
                         {lang === 'de'
-                            ? 'Es werden keine Kontaktformulare genutzt. Technische Daten werden automatisch durch GitHub Pages gespeichert (z. B. IP-Adresse, Browsertyp, Betriebssystem, Uhrzeit), auf die ich keinen direkten Zugriff habe. Diese Daten dienen ausschließlich der Sicherstellung des Betriebs der Website.'
-                            : 'No contact forms are used. Technical data is automatically stored by GitHub Pages (e.g., IP address, browser type, operating system, time), to which I have no direct access. This data is used solely to ensure the operation of the website.'}
+                            ? 'Ihre Daten werden zum einen dadurch erhoben, dass Sie mir diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie per mail angeben. Es werden keine Kontaktformulare genutzt. Technische Daten werden automatisch durch GitHub Pages gespeichert (z. B. IP-Adresse, Browsertyp, Betriebssystem, Uhrzeit), auf die ich keinen direkten Zugriff habe. Diese Daten dienen ausschließlich der Sicherstellung des Betriebs der Website.'
+                            : 'Your data is collected in two ways: first, by you providing it to me. This may include data you provide via email. No contact forms are used. Technical data is automatically stored by GitHub Pages (e.g., IP address, browser type, operating system, time), to which I have no direct access. This data is used solely to ensure the operation of the website.'}
+                    </p>
+                    <h3>{lang === 'de' ? 'Speicherdauer' : 'Storage Duration'}</h3>
+                    <p>
+                        {lang === 'de'
+                            ? 'Ihre personenbezogenen Daten verbleiben bei mir, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht.'
+                            : 'Your personal data will remain with me until the purpose for data processing ceases. If you make a legitimate request for deletion or revoke consent for data processing, your data will be deleted.'}
                     </p>
                 </section>
 
@@ -35,8 +41,8 @@ export default function PrivacyView({ lang }) {
                     <h2>{lang === 'de' ? '3. Hosting' : '3. Hosting'}</h2>
                     <p>
                         {lang === 'de'
-                            ? 'Diese Website wird auf GitHub Pages gehostet. Der Anbieter ist GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.'
-                            : 'This website is hosted on GitHub Pages. The provider is GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.'}
+                            ? 'Diese Website wird extern auf GitHub Pages gehostet. Der Anbieter ist GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.'
+                            : 'This website is hosted on GitHub Pages. The external hosting is carried out for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 para. 1 lit. b GDPR) and in the interest of a secure, fast, and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f GDPR). The provider is GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.'}
                     </p>
                 </section>
 

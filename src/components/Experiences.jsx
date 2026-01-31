@@ -31,8 +31,8 @@ export default function Experience({ lang, experienceRef }) {
                 en: 'Lecturer: Junior-Uni Ruhr'
             },
             period: {
-                de: 'Januar 2022 — Januar 2026',
-                en: 'January 2022 — January 2026'
+                de: 'April 2022 — Januar 2026',
+                en: 'April 2022 — January 2026'
             },
             tasks: {
                 de: ['Selbständige Konzeption und Durchführung von praxisorientierten Kursen (Kinder und Jugendliche 7 - 14 Jahre)',
