@@ -205,3 +205,22 @@
         width: min(54vw, 200px);
     }
 }
+
+@media (min-width: 1600px) {
+    .text-aboutme h1 {
+        font-size: 8vh;
+    }
+
+    .subheading {
+        font-size: 6.5vh;
+    }
+
+    .text-aboutme {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+
+    .descr {
+        font-size: 1.2rem;
+    }
+}
