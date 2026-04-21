@@ -1,193 +1,166 @@
 .experience-detail {
-    margin-top: 50vh;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-}
-
-.top {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    width: 100%;
-    position: relative;    
+    position: relative;
+    background-color: #292E47;
+    color: #DDE7FE;
+    margin-top: 4.5rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 4rem 5rem 5rem;
 }
 
 .headingdet {
-    margin: 0;             
-    text-align: center;
-}
-
-.worklist {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2vw;
-    margin-top: 5vh;
-}
-
-.worklist li button {
-    background: none;
-    margin-top: 2vh;
-    border: 2px solid transparent;
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 1vh 2vw;
-    border-radius: 8px;
-    font-size: 1.7vh;
-    width: fit-content;
-    height: 5vh;
-    background-color: var(--button-color);
-    border: var(--button-border-color) 2px solid;
-    color: var(--text-color);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.worklist li button:hover {
-    background-color: var(--button-color-hover);
-}
-
-.worklist li button.active {
-     background-color: var(--button-color);
-     border: #ffffff 1px solid;
-}
-
-.job-details {
-    max-width: 800px;
-    margin-top: 2vh;
-    text-align: center;
-}
-
-.job-details h3 {
-    font-size: 3vh;
-    margin-bottom: 1vh;
-}
-
-.job-details .period {
-    font-size: 1.7vh;
-    margin-bottom: 3vh;
-    color: var(--text-colorv2);
-}
-
-.job-details .tasks {
+    margin: 0 auto 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    line-height: 1.06;
+    font-weight: 500;
+    color: #DDE7FE;
     text-align: left;
+    width: 100%;
+    max-width: 1060px;
 }
 
-.job-details .tasks li {
-    margin-bottom: 1vh;
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 1060px;
+    margin: 0 auto;
+
 }
 
-@media (max-width: 1200px) {
-    .experience-detail {
-        margin-left: 12vh; 
-        margin-right: 12vh;
-        margin-top: 26vh;
-    }
-    .headingdet {
-        font-size: 4vh; 
-    }
-    .worklist h2 {
-        font-size: 3vh; 
-    }
+.experience-row {
+    display: block;
+    align-items: start;
+}
+
+.experience-card {
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+}
+
+.experience-row.is-featured .experience-card {
+    background: #3B4162;
+    border-radius: 2rem;
+    padding: 1.5rem 1.7rem;
+    margin-left: -1rem;
+    width: 100%;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.1rem;
+}
+
+.experience-title-wrap {
+    min-width: 0;
+}
+
+.experience-title {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #DDE7FE;
+}
+
+.experience-org {
+    margin: 0.2rem 0 0;
+    font-family: 'Playfair Display', serif;
+    color: #6972A7;
+    font-size: 0.96rem;
+    font-weight: 400;
+}
+
+.experience-period {
+    margin: 0.35rem 0 0;
+    flex-shrink: 0;
+    font-family: (--font-accent);
+    color: #AFC5E0;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.experience-description {
+    margin: 0.6rem 0 0;
+    max-width: 68ch;
+    font-size: 1rem;
+    line-height: 1.16;
+    color: rgba(221, 231, 254, 0.9);
+    font-weight: 400;
+}
+
+.experience-icon {
+    width: 1.7rem;
+    height: auto;
+    opacity: 1;
+    filter: brightness(0) invert(1);
 }
 
 @media (max-width: 900px) {
+
     .experience-detail {
-        margin-left: 8vh; 
-        margin-right: 8vh;
-    }
-    .worklist h2 {
-        font-size: 2.7vh; 
-        margin-top: 7vh;
-    }
-    ul {
-        font-size: 2vh;
-    }
-     .worklist li button {
-        font-size: 1.3vh;
-        height: fit-content;
-
-    }
-    .job-details h3 {
-        font-size: 2.2vh;
-    }
-    
-    .job-details .period {
-        font-size: 1.5vh;
+        padding-inline: 2rem;
     }
 
-    .job-details .tasks {
-        font-size: 1.6vh;
+    .experience-header {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .experience-period {
+        margin-top: 0;
+    }
+
+    .experience-description {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 600px) {
     .experience-detail {
-        margin-left: 4vh; 
-        margin-right: 4vh;
-        margin-top: 13vh;
+        margin-top: 2.5rem;
+        padding: 2.2rem 1.4rem 4rem;
     }
-    .headingdet {
-        font-size: 4vh; 
-    }
-    .worklist h2 {
-        font-size: 2.3vh; 
-        margin-top: 5vh;
-    }
-    ul {
-        font-size: 1.7vh;
-    }
-    .worklist li button {
-        font-size: 1.2vh;
-        height: 3vh;
-        margin-top: 0;
-    }
-    .job-details h3 {
-        font-size: 1.6vh;
-    }
-    .job-details .period {
-        font-size: 1.3vh;
-    }
-    .job-details .tasks {
-        font-size: 1.2vh;
-        width: 70%;
-        margin-left: 2.5em;
-    }
-}
 
-@media (max-width: 420px) {
-    .experience-detail {
-        margin-left: 0vh; 
-        margin-right: 2vh;
-        margin-top: 10vh;
-        margin-bottom: 1vh;
-    }
-    .worklist li button {
-        font-size: 1.5vh;
-        height: 3.5vh;
-    }
-    .job-details h3 {
-        font-size: 2vh;
-        align-self: center;
-        margin-left: 1.5vh;
-    }
-     .job-details .period {
-        font-size: 1.6vh;
-    }
     .headingdet {
-        font-size: 3vh; 
-        margin-bottom: 0vh;
+        font-size: 3vh;
+        text-align: center;
     }
-    .worklist {
-        margin-top: 2vh; 
+
+    .experience-row {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        width: 80%;
+        margin-left: 2rem;
     }
-    li {
-        font-size: 1.7vh;
+
+    .experience-row.is-featured .experience-card {
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-left: -1rem;
+        width: 100%;
+    }
+
+    .experience-card {
+        margin-right: 1rem;
+    }
+
+    .experience-title {
+        width: 1%;
+        font-size: 1.2rem;
+    }
+
+    .experience-org,
+    .experience-period,
+    .experience-description {
+        font-size: 0.88rem;
     }
 }

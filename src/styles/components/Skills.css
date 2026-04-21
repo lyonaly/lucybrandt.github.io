@@ -3,14 +3,18 @@
     margin-left: 20%;
     margin-top: 5vh;
     margin-bottom: 0;
-    
+    font-family: var(--font-accent);
+    color: #dae5f4;
+
 }
 
 .skillsContainer h1 {
     margin-top: 25vh;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: #dae5f4;
 }
 
 .skills-group {
@@ -20,10 +24,10 @@
     width: 100%;
 }
 
-.divider { 
+.divider {
     height: 1px;
     background-color: var(--line-colorv2);
-    width: 60%; 
+    width: 60%;
     margin: 10px 0 20px 0;
     align-self: center;
 }
@@ -39,14 +43,14 @@
     justify-items: center;
 }
 
-.skills-item { 
+.skills-item {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
-    background-color: var(--box-color);
+    background-color: #1c1e29c1;
     width: 6vw;
     height: 6vw;
     font-size: 1vw;
@@ -61,9 +65,10 @@
     transform: translateY(6px);
 }
 
-.skills-item:hover { 
+.skills-item:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 1.2rem clamp(2px, 0.1vw, 10px) var(--shadow-color);
+    box-shadow: 0 0 1.2rem 4px #d9e5f84a;
+    cursor: default;
 }
 
 .logos {
@@ -79,13 +84,15 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
+
     .skills-item {
         font-size: 1vw;
         width: 8vw;
         height: 8vw;
     }
+
     .skills-group h3 {
-        font-size: 2vh;   
+        font-size: 2vh;
     }
 }
 
@@ -94,18 +101,22 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
+
     .skills-item {
         width: 10vw;
         height: 10vw;
         font-size: 1.5vh;
     }
+
     .skillsContainer h1 {
         font-size: 4vh;
         margin-top: 20vh;
     }
+
     .skills-group h3 {
-        font-size: 2vh;   
+        font-size: 2vh;
     }
+
     .skills-item.responsive-item {
         font-size: 1.2vh;
     }
@@ -118,20 +129,25 @@
         width: 65%;
         margin-left: 15.5%;
     }
+
     .skills-group h3 {
         margin-left: 10%;
     }
+
     .divider {
         width: 80%;
     }
+
     .skillsContainer h1 {
         font-size: 3vh;
     }
+
     .skills-item {
         width: 15vw;
         height: 15vw;
         font-size: 2.2vw;
     }
+
     .skills-item.responsive-item {
         font-size: 1.8vw;
     }
@@ -142,20 +158,24 @@
         margin-top: 15vh;
         font-size: 3vh;
     }
+
     .skills-list {
         grid-template-columns: repeat(3, 1fr);
         width: 70%;
         margin-left: 15%;
     }
+
     .skills-group h3 {
         font-size: 2vh;
         margin-top: 3vh;
     }
+
     .skills-item {
         width: 18vw;
         height: 18vw;
         font-size: 1.4vh;
     }
+
     .skills-item.responsive-item {
         font-size: 1vh;
     }

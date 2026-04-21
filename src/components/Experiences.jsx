@@ -1,135 +1,107 @@
-import { useState } from 'react';
-
 export default function Experience({ lang, experienceRef }) {
-
-    const [selectedJob, setSelectedJob] = useState('UDE');
-
-    const jobs = {
-        UDE: {
+    const jobs = [
+        {
+            icon: 'Frontend.svg',
+            featured: true,
             title: {
-                de: 'Tutorin: Universität Duisburg-Essen',
-                en: 'Tutor: University of Duisburg-Essen'
+                de: 'Frontend Entwicklerin',
+                en: 'Frontend Engineer',
+            },
+            organization: {
+                de: '',
+                en: '',
             },
             period: {
-                de: 'Oktober 2024 — Heute',
-                en: 'October 2024 — Today'
+                de: 'Januar 2026 — Heute',
+                en: 'January 2026 — Today',
             },
-            tasks: {
-                de: ['Individuelle Betreuung von Studierenden',
-                     'Förderung selbstständigen Arbeitens und Lernens, inkl. Strukturierung von Aufgaben',
-                     'Stärkung von Kommunikations-,  Moderations- und Problemlösungsfähigkeiten.'
-                    ],
-                en: ['Individual support for students',
-                     'Fostering independent work and learning, including structuring tasks',
-                     'Strengthening communication, moderation and problem-solving skills.'
-                    ]
-            }
+            description: {
+                de: 'Als ehrenamtliche Lead-Frontendentwicklerin verantworte ich die technische Umsetzung eines durch die EBZ Business School geförderten Systemmodells zur energetischen Sanierung. In dieser Schlüsselposition trage ich die Hauptverantwortung für die Frontend-Implementierung und stelle durch kontinuierliche Performance-Optimierung sowie strikte Qualitätssicherung eine effiziente und skalierbare Anwendung sicher. ',
+                en: 'As a volunteer lead frontend engineer, I am responsible for implementing a system model funded by the EBZ Business School for energy-efficient refurbishment. In this key role, I lead frontend implementation and ensure an efficient, scalable application through continuous performance optimization and strict quality assurance.',
+            },
         },
-        JuniorUni: {
+        {
+            icon: 'Tutor.svg',
             title: {
-                de: 'Dozentin: Junior-Uni Ruhr',
-                en: 'Lecturer: Junior-Uni Ruhr'
+                de: 'Tutorin',
+                en: 'Tutor',
+            },
+            organization: {
+                de: 'Universitaet Duisburg-Essen',
+                en: 'University of Duisburg-Essen',
+            },
+            period: {
+                de: 'Oktober 2024 -  April 2026',
+                en: 'October 2024 — April 2026',
+            },
+            description: {
+                de: 'Der Schwerpunkt meiner Arbeit lag in der individuellen Betreuung von Studierenden. Ich förderte gezielt selbststaendiges Arbeiten und Lernen sowie die Strukturierung komplexer Aufgaben. Zudem stärke ich Kommunikations-, Moderations- und Problemlösungsfähigkeiten.',
+                en: 'My focus is the individual support of students. I specifically foster independent work and learning as well as structuring complex tasks. I also strengthen communication, moderation, and problem-solving skills.',
+            },
+        },
+        {
+            icon: 'cube.svg',
+            title: {
+                de: 'Dozentin',
+                en: 'Lecturer',
+            },
+            organization: {
+                de: 'Junior-Uni Ruhr',
+                en: 'Junior-Uni Ruhr',
             },
             period: {
                 de: 'April 2022 — Januar 2026',
-                en: 'April 2022 — January 2026'
+                en: 'April 2022 — January 2026',
             },
-            tasks: {
-                de: ['Selbständige Konzeption und Durchführung von praxisorientierten Kursen (Kinder und Jugendliche 7 - 14 Jahre)',
-                     'Vermittlung technischer Inhalte an junge Lernende',
-                     'Planung und Durchführung praxisorientierter Workshops',
-                     'Aufbereitung komplexer technischer Konzepte in verständlicher Form',
-                     'Betreuung kleinerer Projektgruppen und Unterstützung bei technischen Problemen',
-                     'Problemlösung bei Software- und Hardwarefragen'
-                    ],
-                en: ['Independent conception and implementation of practice-oriented courses (children and young people 7 - 14 years)',
-                     'Teaching technical content to young learners',
-                     'Planning and conducting practice-oriented workshops',
-                     'Preparation of complex technical concepts in an understandable form',
-                     'Supervision of small project groups and support with technical problems',
-                     'Problem solving for software and hardware issues'
-                    ]
+            description: {
+                de: 'Mein Fokus lag auf der individuellen Betreuung und Förderung von Lernenden unterschiedlicher Altersgruppen. Ich verfüge über fundierte Erfahrung in der selbstständigen Konzeption und Durchführung praxisorientierter Kurse. Dabei spezialisierte ich mich darauf, komplexe technische Inhalte verständlich aufzubereiten und jungen Zielgruppen zu vermitteln.',
+                en: 'My focus is the individual support and promotion of learners of different age groups. I have extensive experience in independently designing and conducting practice-oriented courses. I specialize in preparing complex technical content in an understandable way and conveying it to young audiences.',
             }
         },
-        Klostermarkt: {
+        {
+            icon: 'robot.svg',
             title: {
-                de: 'Kursleitung: Grundschule Am Klostermarkt',
-                en: 'Instructor: Klostermarkt Primary School'
+                de: 'Kursleitung für Programmierung',
+                en: 'Programming Course Instructor',
+            },
+            organization: {
+                de: 'Grundschule am Klostermarkt',
+                en: 'Klostermarkt Primary School',
             },
             period: {
                 de: '2021 — 2022',
-                en: '2021 — 2022'
+                en: '2021 — 2022',
             },
-            tasks: {
-                de: ['Konzeption und Leitung von Programmier-Workshops mit LEGO Mindstorms EV3 Roboter (Kinder der ersten Klasse)',
-                     'Vermittlung grundlegender Programmierkonzepte und Förderung von logischem Denken sowie Problemlösungsfähigkeiten', 
-                     'Anleitung von Gruppenprojekten'
-                    ],
-                en: ['Conception and management of programming workshops with LEGO Mindstorms EV3 robots (children of the first grade)', 
-                     'Teaching basic programming concepts and promoting logical thinking and problem-solving skills', 
-                     'Guidance of group projects'
-                    ]
-            }
-        }
-    };
+            description: {
+                de: 'Ich konzipierte und leitete Programmier-Workshops mit LEGO Mindstorms EV3 Robotern für Grundschulkinder. Dabei vermittelte ich grundlegende Programmierkonzepte, förderte logisches Denken und begleitete Gruppenprojekte praxisnah.',
+                en: 'Designed and led programming workshops using LEGO Mindstorms EV3 for primary school children. I taught fundamental programming concepts, fostered logical thinking, and guided group projects in a practical manner.',
+            },
+        },
+    ];
 
     return (
-        <div className="details-page">
-            <main>
-                <section className="experience-detail" ref={experienceRef}>
-                    <div className="top">
-                        <h1 className="headingdet">{lang === 'de' ? 'Arbeitserfahrung' : 'Experiences'}</h1>
-                    </div>
-                    <ul className="worklist">
-                        <li key="UDE">
-                            <button onClick={() => setSelectedJob('UDE')} className={selectedJob === 'UDE' ? 'active' : ''}>
-                                {lang === 'de' ? 'Universitäts Tutorin' : 'University Tutor'}
-                            </button>
-                        </li>
-                        <li key="JuniorUni">
-                            <button onClick={() => setSelectedJob('JuniorUni')} className={selectedJob === 'JuniorUni' ? 'active' : ''}>
-                                {lang === 'de' ? '3D-Druck Dozentin' : '3D-Printing Lecturer'}
-                            </button>
-                        </li>
-                        <li key="Klostermarkt">
-                            <button onClick={() => setSelectedJob('Klostermarkt')} className={selectedJob === 'Klostermarkt' ? 'active' : ''}>
-                                {lang === 'de' ? 'Robotik Kursleitung' : 'Robotics Instructor'}
-                            </button>
-                        </li>
-                    </ul>
+        <section className="experience-detail" ref={experienceRef}>
+            <h1 className="headingdet">{lang === 'de' ? 'Meine Arbeitserfahrung' : 'My experiences'}</h1>
 
-                    <div className="job-details">
-                        <h3>{jobs[selectedJob].title[lang]}</h3>
-                        <p className="period">{jobs[selectedJob].period[lang]}</p>
-                        <ul className="tasks">
-                            {selectedJob === 'UDE' && (
-                                <>
-                                    <li>{jobs.UDE.tasks[lang][0]}</li>
-                                    <li>{jobs.UDE.tasks[lang][1]}</li>
-                                    <li>{jobs.UDE.tasks[lang][2]}</li>
-                                </>
-                            )}
-                            {selectedJob === 'JuniorUni' && (
-                                <>
-                                    <li>{jobs.JuniorUni.tasks[lang][0]}</li>
-                                    <li>{jobs.JuniorUni.tasks[lang][1]}</li>
-                                    <li>{jobs.JuniorUni.tasks[lang][2]}</li>
-                                    <li>{jobs.JuniorUni.tasks[lang][3]}</li>
-                                    <li>{jobs.JuniorUni.tasks[lang][4]}</li>
-                                    <li>{jobs.JuniorUni.tasks[lang][5]}</li>
-                                </>
-                            )}
-                            {selectedJob === 'Klostermarkt' && (
-                                <>
-                                    <li>{jobs.Klostermarkt.tasks[lang][0]}</li>
-                                    <li>{jobs.Klostermarkt.tasks[lang][1]}</li>
-                                    <li>{jobs.Klostermarkt.tasks[lang][2]}</li>
-                                </>
-                            )}
-                        </ul>
-                    </div>
-                </section>
-            </main>
-        </div>
+            <div className="experience-timeline">
+                {jobs.map((job) => (
+                    <article key={job.title.de} className={`experience-row ${job.featured ? 'is-featured' : ''}`}>
+                        <div className="experience-card">
+                            <header className="experience-header">
+                                <div className="experience-title-wrap">
+                                    <h2 className="experience-title">
+                                        {job.title[lang]}
+                                        <img src={job.icon} alt="" aria-hidden="true" className="experience-icon" />
+                                    </h2>
+                                    {job.organization[lang] && <p className="experience-org">{job.organization[lang]}</p>}
+                                </div>
+                                <p className="experience-period">{job.period[lang]}</p>
+                            </header>
+                            <p className="experience-description">{job.description[lang]}</p>
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </section>
     );
 }

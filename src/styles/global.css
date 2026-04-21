@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #1D202F;
+    --bg-color: #292E47;
     --text-color: #ffffff;
     --text-colorv2: #61667e;
     --box-color: #161820;
@@ -11,22 +11,24 @@
     --button-color-hover: #4e5268;
     --button-border-color: #2f2c396d;
     --font-main: system-ui, -apple-system, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-accent: 'Tenor Sans', system-ui, -apple-system, sans-serif;
 }
 
 html {
-    overflow-y: scroll; 
-    scrollbar-gutter: stable; 
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg-color); 
-    color: var(--text-color);               
-    font-family: var(--font-main);  
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
     margin: 0;
     font-size: 1.2rem;
 }
 
 section {
-    scroll-margin-top: 300px; 
+    scroll-margin-top: 300px;
 }

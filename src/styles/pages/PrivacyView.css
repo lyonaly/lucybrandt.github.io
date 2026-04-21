@@ -1,5 +1,5 @@
 .privacy-view {
-    min-height: calc(100vh - 200px);
+    min-height: 100vh;
     padding: 120px 20px 40px;
 }
 
@@ -9,16 +9,17 @@
     background: rgba(255, 255, 255, 0.05);
     padding: 40px;
 
-.privacy-list {
-    margin: 10px 0 20px;
-    padding-left: 1.5rem;
-    color: var(--text-color);
-    list-style: disc;
-}
+    .privacy-list {
+        margin: 10px 0 20px;
+        padding-left: 1.5rem;
+        color: var(--text-color);
+        list-style: disc;
+    }
 
-.privacy-list li {
-    margin-bottom: 8px;
-}
+    .privacy-list li {
+        margin-bottom: 8px;
+    }
+
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -49,10 +50,11 @@
 }
 
 .privacy-container p {
-    color:var(--text-color);
+    color: var(--text-color);
     line-height: 1.8;
     margin-bottom: 15px;
 }
+
 .dark-link {
     color: var(--text-color);
     text-decoration: underline;
@@ -82,5 +84,5 @@
     .privacy-container h3 {
         font-size: 1.2rem;
     }
-    
+
 }
