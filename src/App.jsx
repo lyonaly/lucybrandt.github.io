@@ -69,25 +69,32 @@ function App() {
     setTimeout(() => {
       if (targetId === 'top') {
         setActiveSection('top');
-        window.scrollTo({ top: 0 });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
 
       const map = { about: aboutRef, experience: experienceRef, skills: skillsRef, certificates: certificatesRef, contact: footerRef };
       const ref = map[targetId];
       if (ref && ref.current) {
-        const offsets = {
+        const navbarHeight = document.querySelector('nav')?.offsetHeight ?? 80;
+        const triggerY = navbarHeight + 28;
+        const sectionTop = ref.current.getBoundingClientRect().top + window.scrollY;
+
+        // Fine-tuned viewport targets per section to match desired landing positions.
+        const viewportTargetBySection = {
           about: 30,
-          experience: 150,
-          skills: 150,
-          certificates: 150,
-          contact: 150,
+          experience: triggerY,
+          skills: 60,
+          certificates: -80,
+          contact: 60,
         };
-        const offsetTop = ref.current.offsetTop - (offsets[targetId] ?? 150);
+        const viewportTarget = viewportTargetBySection[targetId] ?? triggerY;
+        const offsetTop = Math.max(0, sectionTop - viewportTarget);
+
         setActiveSection(targetId);
-        window.scrollTo({ top: offsetTop });
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
-      else window.scrollTo({ top: 0 });
+      else window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 30);
   }
 
