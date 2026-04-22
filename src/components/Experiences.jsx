@@ -54,8 +54,9 @@ export default function Experience({ lang, experienceRef }) {
                 en: 'April 2022 — January 2026',
             },
             description: {
-                de: 'Mein Fokus lag auf der individuellen Betreuung und Förderung von Lernenden unterschiedlicher Altersgruppen. Ich verfüge über fundierte Erfahrung in der selbstständigen Konzeption und Durchführung praxisorientierter Kurse. Dabei spezialisierte ich mich darauf, komplexe technische Inhalte verständlich aufzubereiten und jungen Zielgruppen zu vermitteln.',
-                en: 'My focus is the individual support and promotion of learners of different age groups. I have extensive experience in independently designing and conducting practice-oriented courses. I specialize in preparing complex technical content in an understandable way and conveying it to young audiences.',
+                de: 'Mein Fokus lag auf der individuellen Betreuung und Förderung von Lernenden unterschiedlicher Altersgruppen. Ich verfüge über fundierte Erfahrung in der selbstständigen Konzeption und Durchführung praxisorientierter 3D-Druck Kursen. Dabei spezialisierte ich mich darauf, komplexe technische Inhalte verständlich aufzubereiten und jungen Zielgruppen zu vermitteln.',
+                en: 'My focus has been on providing individualized support and guidance to learners of various age groups. I have extensive experience in independently designing and conducting hands-on 3D printing courses. In doing so, I have specialized in presenting complex technical concepts in an accessible way and conveying them to young audiences.'
+
             }
         },
         {
