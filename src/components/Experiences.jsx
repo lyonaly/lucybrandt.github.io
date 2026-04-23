@@ -27,7 +27,7 @@ export default function Experience({ lang, experienceRef }) {
                 en: 'Tutor',
             },
             organization: {
-                de: 'Universitaet Duisburg-Essen',
+                de: 'Universität Duisburg-Essen',
                 en: 'University of Duisburg-Essen',
             },
             period: {
