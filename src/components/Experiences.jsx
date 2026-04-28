@@ -31,7 +31,7 @@ export default function Experience({ lang, experienceRef }) {
                 en: 'University of Duisburg-Essen',
             },
             period: {
-                de: 'Oktober 2024 -  April 2026',
+                de: 'Oktober 2024 —  April 2026',
                 en: 'October 2024 — April 2026',
             },
             description: {
