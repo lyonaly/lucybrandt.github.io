@@ -17,7 +17,15 @@ function App() {
   const footerRef = useRef(null);
 
   useEffect(() => {
-    window.scrollTo({ top: 0 });
+    document.documentElement.style.scrollBehavior = 'auto';
+
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    setTimeout(() => {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    }, 0);
   }, [view]);
 
   useEffect(() => {
@@ -80,7 +88,6 @@ function App() {
         const triggerY = navbarHeight + 28;
         const sectionTop = ref.current.getBoundingClientRect().top + window.scrollY;
 
-        // Fine-tuned viewport targets per section to match desired landing positions.
         const viewportTargetBySection = {
           about: 30,
           experience: triggerY,
