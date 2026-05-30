@@ -8,16 +8,16 @@ export default function Experience({ lang, experienceRef }) {
                 en: 'Frontend Engineer',
             },
             organization: {
-                de: '',
-                en: '',
+                de: 'Öko²',
+                en: 'Öko²',
             },
             period: {
                 de: 'Januar 2026 — Heute',
                 en: 'January 2026 — Today',
             },
             description: {
-                de: 'Als ehrenamtliche Lead-Frontendentwicklerin verantworte ich die technische Umsetzung eines durch die EBZ Business School geförderten Systemmodells zur energetischen Sanierung. In dieser Schlüsselposition trage ich die Hauptverantwortung für die Frontend-Implementierung und stelle durch kontinuierliche Performance-Optimierung sowie strikte Qualitätssicherung eine effiziente und skalierbare Anwendung sicher. ',
-                en: 'As a volunteer lead frontend engineer, I am responsible for implementing a system model funded by the EBZ Business School for energy-efficient refurbishment. In this key role, I lead frontend implementation and ensure an efficient, scalable application through continuous performance optimization and strict quality assurance.',
+                de: 'Als ehrenamtliche Lead-Frontendentwicklerin verantworte ich die technische Umsetzung für die Webseite <a href="https://www.Öko2.com" target="_blank" rel="noopener noreferrer">öko2.com</a>. Dabei handelt es sich um ein von der EBZ Business School gefördertes Systemmodell zur Dämmung von Gebäuden. In dieser Schlüsselposition trage ich die Hauptverantwortung für die Frontend-Implementierung und stelle durch kontinuierliche Performance-Optimierung sowie strikte Qualitätssicherung eine effiziente und sichere Anwendung sicher. ',
+                en: 'As a volunteer lead frontend developer, I am responsible for the technical implementation of the website <a href="https://www.Öko2.com" target="_blank" rel="noopener noreferrer">öko2.com</a>. This is a system model for insulating buildings funded by the EBZ Business School. In this key position, I bear the primary responsibility for frontend implementation and ensure an efficient and secure application through continuous performance optimization and strict quality assurance.',
             },
         },
         {
@@ -98,7 +98,7 @@ export default function Experience({ lang, experienceRef }) {
                                 </div>
                                 <p className="experience-period">{job.period[lang]}</p>
                             </header>
-                            <p className="experience-description">{job.description[lang]}</p>
+                            <p className="experience-description" dangerouslySetInnerHTML={{ __html: job.description[lang] }}></p>
                         </div>
                     </article>
                 ))}

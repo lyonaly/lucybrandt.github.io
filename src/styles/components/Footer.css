@@ -61,14 +61,13 @@ footer p {
 
 .dark-link {
     color: #AFC5E0;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(175, 197, 224, 0.55);
-    transition: color 180ms ease, border-color 180ms ease;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: color 180ms ease;
 }
 
 .dark-link:hover {
     color: #DDE7FE;
-    border-color: #DDE7FE;
 }
 
 .copyright {

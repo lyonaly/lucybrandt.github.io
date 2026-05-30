@@ -97,6 +97,12 @@
     font-weight: 400;
 }
 
+/* Ensure links in descriptions use the same color as surrounding text */
+.experience-description a,
+.experience-description a:visited {
+    color: inherit;
+}
+
 .experience-icon {
     width: 1.7rem;
     height: auto;
