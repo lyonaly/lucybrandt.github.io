@@ -113,6 +113,32 @@ nav a.active::after {
     transform: scaleX(1);
 }
 
+.cv-download {
+    background: linear-gradient(135deg, #C8D8F0, #DCE9FF);
+    color: #1E2030;
+    font-weight: 700;
+    border: 1px solid #C8D8F0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.cv-download__icon {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.cv-download::after {
+    display: none;
+}
+
+.cv-download:hover {
+    background: linear-gradient(135deg, #DCE9FF, #C8D8F0);
+    color: #1E2030;
+}
+
 .flag {
     margin-top: 0;
     width: 1.5rem;
@@ -171,6 +197,11 @@ nav button:hover .flag {
 
     nav button {
         padding: 0;
+    }
+
+    .cv-download {
+        padding: 0.3rem 0.55rem;
+        font-size: 0.78rem;
     }
 }
 

@@ -1,7 +1,27 @@
 export default function Experience({ lang, experienceRef }) {
     const jobs = [
         {
-            icon: 'Frontend.svg',
+            icon: 'code-laptop.svg',
+            featured: true,
+            title: {
+                de: 'Werkstudentin Web- und Softwareentwicklung',
+                en: 'Working Student Web and Software Development',
+            },
+            organization: {
+                de: 'CAND VISION GmbH',
+                en: 'CAND VISION GmbH',
+            },
+            period: {
+                de: 'Juni 2026 — Heute',
+                en: 'June 2026 – Today',
+            },
+            description: {
+                de: 'Neben der kontinuierlichen Konzeption, Gestaltung und Weiterentwicklung moderner Internetseiten entwerfe und setze ich maßgeschneiderte Softwarelösungen für komplexe Geschäftsprozesse um. Zudem bin ich verantwortlich für die Implementierung von Softwarelösungen, die den spezifischen Anforderungen des Unternehmens gerecht werden und die Effizienz der Arbeitsabläufe verbessern.',
+                en: 'In addition to the continuous conception, design, and further development of modern websites, I design and implement customized software solutions for complex business processes. I am also responsible for implementing software solutions that meet the specific requirements of the company and improve the efficiency of workflows.',
+            },
+        },
+        {
+            icon: 'website.svg',
             featured: true,
             title: {
                 de: 'Frontend Entwicklerin',
@@ -16,8 +36,8 @@ export default function Experience({ lang, experienceRef }) {
                 en: 'January 2026 — Today',
             },
             description: {
-                de: 'Als ehrenamtliche Lead-Frontendentwicklerin verantworte ich die technische Umsetzung für die Webseite <a href="https://www.Öko2.com" target="_blank" rel="noopener noreferrer">öko2.com</a>. Dabei handelt es sich um ein von der EBZ Business School gefördertes Systemmodell zur Dämmung von Gebäuden. In dieser Schlüsselposition trage ich die Hauptverantwortung für die Frontend-Implementierung und stelle durch kontinuierliche Performance-Optimierung sowie strikte Qualitätssicherung eine effiziente und sichere Anwendung sicher. ',
-                en: 'As a volunteer lead frontend developer, I am responsible for the technical implementation of the website <a href="https://www.Öko2.com" target="_blank" rel="noopener noreferrer">öko2.com</a>. This is a system model for insulating buildings funded by the EBZ Business School. In this key position, I bear the primary responsibility for frontend implementation and ensure an efficient and secure application through continuous performance optimization and strict quality assurance.',
+                de: 'Als Lead-Frontendentwicklerin verantworte ich die technische Umsetzung für die Webseite <a href="https://www.Öko2.com" target="_blank" rel="noopener noreferrer">öko2.com</a>. Dabei handelt es sich um ein von der EBZ Business School gefördertes Systemmodell zur Dämmung von Gebäuden. In dieser Schlüsselposition trage ich die Hauptverantwortung für die Frontend-Implementierung und stelle durch kontinuierliche Performance-Optimierung sowie strikte Qualitätssicherung eine effiziente und sichere Anwendung sicher. ',
+                en: 'As a lead frontend developer, I am responsible for the technical implementation of the website <a href="https://www.Öko2.com" target="_blank" rel="noopener noreferrer">öko2.com</a>. This is a system model for insulating buildings funded by the EBZ Business School. In this key position, I bear the primary responsibility for frontend implementation and ensure an efficient and secure application through continuous performance optimization and strict quality assurance.',
             },
         },
         {
@@ -82,7 +102,15 @@ export default function Experience({ lang, experienceRef }) {
 
     return (
         <section className="experience-detail" ref={experienceRef}>
-            <h1 className="headingdet">{lang === 'de' ? 'Meine Arbeitserfahrung' : 'My experiences'}</h1>
+            <div className="experience-heading-row">
+                <h1 className="headingdet">{lang === 'de' ? 'Meine Arbeitserfahrung' : 'My experiences'}</h1>
+                <a href="/CV_Brandt.pdf" download="CV_Brandt.pdf" className="experience-download-btn">
+                    <svg className="experience-download-btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 12.586V4a1 1 0 0 1 1-1ZM5 17a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />
+                    </svg>
+                    <span>{lang === 'de' ? 'Lebenslauf' : 'Resume'}</span>
+                </a>
+            </div>
 
             <div className="experience-timeline">
                 {jobs.map((job) => (

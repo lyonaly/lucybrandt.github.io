@@ -8,8 +8,18 @@
     padding: 4rem 5rem 5rem;
 }
 
-.headingdet {
+.experience-heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1060px;
     margin: 0 auto 3rem;
+    width: 100%;
+}
+
+.headingdet {
+    margin: 0;
     font-family: 'Playfair Display', serif;
     font-size: 2.4rem;
     line-height: 1.06;
@@ -17,7 +27,33 @@
     color: #DDE7FE;
     text-align: left;
     width: 100%;
-    max-width: 1060px;
+}
+
+.experience-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #C8D8F0, #DCE9FF);
+    color: #1E2030;
+    font-family: 'Tenor Sans', var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 180ms ease;
+    white-space: nowrap;
+}
+
+.experience-download-btn:hover {
+    filter: brightness(1.05);
+}
+
+.experience-download-btn__icon {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+    flex-shrink: 0;
 }
 
 .experience-timeline {
@@ -46,6 +82,13 @@
     padding: 1.5rem 1.7rem;
     margin-left: -1rem;
     width: 100%;
+}
+
+.experience-icon {
+    width: 1.7rem;
+    height: auto;
+    opacity: 1;
+    filter: brightness(0) invert(1);
 }
 
 .experience-header {
@@ -103,8 +146,8 @@
     color: inherit;
 }
 
-.experience-icon {
-    width: 1.7rem;
+.experience-row.is-featured .experience-icon {
+    width: 2.2rem;
     height: auto;
     opacity: 1;
     filter: brightness(0) invert(1);
@@ -136,9 +179,21 @@
         padding: 2.2rem 1.4rem 4rem;
     }
 
+    .experience-heading-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
+
     .headingdet {
         font-size: 3vh;
         text-align: center;
+    }
+
+    .experience-download-btn {
+        padding: 0.65rem 0.9rem;
+        font-size: 0.85rem;
     }
 
     .experience-row {
