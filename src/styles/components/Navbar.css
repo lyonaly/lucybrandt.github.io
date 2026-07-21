@@ -200,8 +200,7 @@ nav button:hover .flag {
     }
 
     .cv-download {
-        padding: 0.3rem 0.55rem;
-        font-size: 0.78rem;
+        display: none;
     }
 }
 
