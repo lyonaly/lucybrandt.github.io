@@ -76,6 +76,14 @@ export default function Skills({ lang, skillsRef }) {
                             Git
                         </li>
                         <li className="skills-item">
+                            <img className="logos" src="docker.png" />
+                            Docker
+                        </li>
+                        <li className="skills-item processwire-item">
+                            <img className="logos" src="processwire.svg" />
+                            ProcessWire CMS
+                        </li>
+                        <li className="skills-item">
                             <img className="logos" src="powerbi.png" />
                             Power BI
                         </li>

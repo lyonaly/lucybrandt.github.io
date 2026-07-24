@@ -61,6 +61,10 @@
     font-size: 0.8vw;
 }
 
+.skills-item.processwire-item {
+    font-size: 0.8vw;
+}
+
 .skills-item.responsive-item .logos {
     transform: translateY(6px);
 }
