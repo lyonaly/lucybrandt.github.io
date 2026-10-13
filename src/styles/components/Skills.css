@@ -155,6 +155,15 @@
     .skills-item.responsive-item {
         font-size: 1.8vw;
     }
+
+    .skills-item.processwire-item {
+        min-height: 20vw;
+        padding: 0.25rem;
+        box-sizing: border-box;
+        font-size: 0.68rem;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+    }
 }
 
 @media (max-width: 420px) {
@@ -182,5 +191,12 @@
 
     .skills-item.responsive-item {
         font-size: 1vh;
+    }
+
+    .skills-item.processwire-item {
+        min-height: 21vw;
+        padding: 0.2rem;
+        font-size: 0.62rem;
+        line-height: 1.2;
     }
 }
