@@ -1,4 +1,4 @@
-export default function Experience({ lang, experienceRef }) {
+export default function Experience({ lang, experienceRef, showAll = false, showExperienceHistory }) {
     const resumeFile = lang === 'de' ? 'Lebenslauf_Brandt.pdf' : 'CV_Brandt.pdf';
     const jobs = [
         {
@@ -114,7 +114,7 @@ export default function Experience({ lang, experienceRef }) {
             </div>
 
             <div className="experience-timeline">
-                {jobs.map((job) => (
+                {jobs.filter((job) => showAll || job.featured).map((job) => (
                     <article key={job.title.de} className={`experience-row ${job.featured ? 'is-featured' : ''}`}>
                         <div className="experience-card">
                             <header className="experience-header">
@@ -132,6 +132,12 @@ export default function Experience({ lang, experienceRef }) {
                     </article>
                 ))}
             </div>
+
+            {!showAll && (
+                <button className="section-button experience-history-button" onClick={showExperienceHistory}>
+                    {lang === 'de' ? 'Alle Arbeitserfahrungen anzeigen' : 'Show all work experience'}
+                </button>
+            )}
 
             <div className="experience-download-row">
                 <a href={`/${resumeFile}`} download={resumeFile} className="experience-download-btn">

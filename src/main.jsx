@@ -7,6 +7,8 @@ import './styles/components/About.css'
 import './styles/components/Experiences.css'
 import './styles/components/Skills.css'
 import './styles/components/Certificates.css'
+import './styles/components/Projects.css'
+import './styles/pages/Subpages.css'
 import './styles/components/Footer.css'
 
 createRoot(document.getElementById('root')).render(
@@ -14,4 +16,3 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
- 

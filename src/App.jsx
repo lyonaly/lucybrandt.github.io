@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainView from './pages/MainView';
 import PrivacyView from './pages/PrivacyView';
+import AboutView from './pages/AboutView';
+import ExperienceHistoryView from './pages/ExperienceHistoryView';
 import './styles/pages/PrivacyView.css';
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
   const experienceRef = useRef(null);
   const skillsRef = useRef(null);
   const certificatesRef = useRef(null);
+  const projectsRef = useRef(null);
   const footerRef = useRef(null);
 
   useEffect(() => {
@@ -35,6 +38,7 @@ function App() {
       ['about', aboutRef],
       ['experience', experienceRef],
       ['skills', skillsRef],
+      ['projects', projectsRef],
       ['certificates', certificatesRef],
       ['contact', footerRef],
     ];
@@ -81,7 +85,7 @@ function App() {
         return;
       }
 
-      const map = { about: aboutRef, experience: experienceRef, skills: skillsRef, certificates: certificatesRef, contact: footerRef };
+      const map = { about: aboutRef, experience: experienceRef, skills: skillsRef, projects: projectsRef, certificates: certificatesRef, contact: footerRef };
       const ref = map[targetId];
       if (ref && ref.current) {
         const navbarHeight = document.querySelector('nav')?.offsetHeight ?? 80;
@@ -92,6 +96,7 @@ function App() {
           about: 30,
           experience: triggerY,
           skills: 60,
+          projects: 60,
           certificates: -80,
           contact: 60,
         };
@@ -109,14 +114,26 @@ function App() {
     setView('privacy');
   }
 
+  function navigateToAbout() {
+    setView('about');
+  }
+
+  function navigateToExperienceHistory() {
+    setView('experience-history');
+  }
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar lang={lang} toggleLang={toggleLang} navigateToSection={navigateToSection} activeSection={activeSection} />
       <div style={{ flex: 1 }}>
         {view === 'privacy' ? (
           <PrivacyView lang={lang} />
+        ) : view === 'about' ? (
+          <AboutView lang={lang} navigateHome={() => setView('main')} />
+        ) : view === 'experience-history' ? (
+          <ExperienceHistoryView lang={lang} navigateHome={() => setView('main')} />
         ) : (
-          <MainView lang={lang} aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} certificatesRef={certificatesRef} showDetails={() => setView('details')} />
+          <MainView lang={lang} aboutRef={aboutRef} experienceRef={experienceRef} skillsRef={skillsRef} projectsRef={projectsRef} certificatesRef={certificatesRef} showAbout={navigateToAbout} showExperienceHistory={navigateToExperienceHistory} />
         )}
       </div>
       <Footer lang={lang} footerRef={footerRef} navigateToPrivacy={navigateToPrivacy} />

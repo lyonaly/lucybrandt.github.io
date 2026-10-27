@@ -1,0 +1,101 @@
+.subpage,
+.history-page {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 8rem 5rem 5rem;
+    background: #292e47;
+    color: #dde7fe;
+}
+
+.subpage-back {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #c8d8f0;
+    cursor: pointer;
+    font: 0.95rem var(--font-accent);
+}
+
+.subpage-back:hover {
+    color: #fff;
+}
+
+.subpage-content {
+    max-width: 1060px;
+    margin: 3rem auto 0;
+}
+
+.subpage-eyebrow {
+    margin: 0 0 0.75rem;
+    color: #afc5e0;
+    font: 0.9rem var(--font-accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.subpage-content h1 {
+    margin: 0;
+    color: #dde7fe;
+    font: 500 3rem/1.1 var(--font-heading);
+}
+
+.subpage-intro {
+    max-width: 68ch;
+    margin: 1.5rem 0 3rem;
+    color: rgba(221, 231, 254, 0.88);
+    line-height: 1.6;
+}
+
+.about-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.about-topic {
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    background: #3b4162;
+}
+
+.about-topic h2 {
+    margin: 0 0 0.6rem;
+    color: #dde7fe;
+    font: 500 1.35rem var(--font-heading);
+}
+
+.about-topic p {
+    margin: 0;
+    color: rgba(221, 231, 254, 0.84);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.history-page .experience-detail {
+    margin-top: 3rem;
+    padding-inline: 0;
+}
+
+@media (max-width: 600px) {
+
+    .subpage,
+    .history-page {
+        padding: 7rem 1.4rem 3rem;
+    }
+
+    .subpage-content {
+        margin-top: 2rem;
+    }
+
+    .subpage-content h1 {
+        font-size: 2.35rem;
+    }
+
+    .about-topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .history-page .experience-detail {
+        padding-top: 2rem;
+    }
+}

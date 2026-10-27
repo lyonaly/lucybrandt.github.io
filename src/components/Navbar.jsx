@@ -1,5 +1,5 @@
 export default function Navbar({ lang, toggleLang, navigateToSection, activeSection }) {
-    const sectionIds = ['about', 'experience', 'skills', 'certificates', 'contact'];
+    const sectionIds = ['about', 'experience', 'skills', 'projects', 'certificates', 'contact'];
     const resumeFile = lang === 'de' ? 'Lebenslauf_Brandt.pdf' : 'CV_Brandt.pdf';
 
     const navContent = {
@@ -7,6 +7,7 @@ export default function Navbar({ lang, toggleLang, navigateToSection, activeSect
             { full: 'Über mich', short: 'Über' },
             { full: 'Arbeitserfahrung', short: 'Erfahrung' },
             { full: 'Skills', short: 'Skills' },
+            { full: 'Projekte', short: 'Projekte' },
             { full: 'Zertifikate', short: 'Zertifikate' },
             { full: 'Kontakt', short: 'Kontakt' },
         ],
@@ -14,6 +15,7 @@ export default function Navbar({ lang, toggleLang, navigateToSection, activeSect
             { full: 'About me', short: 'About' },
             { full: 'Experiences', short: 'Work' },
             { full: 'Skills', short: 'Skills' },
+            { full: 'Projects', short: 'Projects' },
             { full: 'Certificates', short: 'Certs' },
             { full: 'Contact', short: 'Contact' },
         ],

@@ -2,8 +2,9 @@ import Skills from '../components/Skills';
 import Certificates from '../components/Certificates';
 import Experiences from '../components/Experiences';
 import Heading from '../components/Heading';
+import Projects from '../components/Projects';
 
-export default function MainView({ lang, aboutRef, experienceRef, skillsRef, certificatesRef, showDetails }) {
+export default function MainView({ lang, aboutRef, experienceRef, skillsRef, projectsRef, certificatesRef, showAbout, showExperienceHistory }) {
 
     const birthDate = new Date(2004, 3);
 
@@ -36,10 +37,14 @@ export default function MainView({ lang, aboutRef, experienceRef, skillsRef, cer
                 <article className="text-aboutme">
                     <h1 id="heading">{heading[lang]}</h1>
                     <p id="description" className="descr">{texts[lang]}</p>
+                    <button className="section-button about-button" onClick={showAbout}>
+                        {lang === 'de' ? 'Mehr über mich erfahren' : 'Learn more about me'}
+                    </button>
                 </article>
             </section>
-            <Experiences lang={lang} experienceRef={experienceRef} showDetails={showDetails} />
+            <Experiences lang={lang} experienceRef={experienceRef} showExperienceHistory={showExperienceHistory} />
             <Skills lang={lang} skillsRef={skillsRef} />
+            <Projects lang={lang} projectsRef={projectsRef} />
             <Certificates lang={lang} certificatesRef={certificatesRef} />
         </main>
     );

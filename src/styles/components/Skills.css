@@ -9,7 +9,7 @@
 }
 
 .skillsContainer h1 {
-    margin-top: 25vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,10 +35,10 @@
 .skills-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    gap: clamp(24px, 2vw, 40px);
     padding: 0;
-    width: 50%;
-    margin-left: 25%;
+    width: min(60%, 1100px);
+    margin: 0 auto;
     align-items: center;
     justify-items: center;
 }
@@ -51,18 +51,18 @@
     text-align: center;
     border-radius: 20px;
     background-color: #1c1e29c1;
-    width: 6vw;
-    height: 6vw;
-    font-size: 1vw;
+    width: clamp(84px, 5.2vw, 104px);
+    height: clamp(84px, 5.2vw, 104px);
+    font-size: clamp(0.78rem, 0.85vw, 0.95rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-item.responsive-item {
-    font-size: 0.8vw;
+    font-size: clamp(0.7rem, 0.76vw, 0.84rem);
 }
 
 .skills-item.processwire-item {
-    font-size: 0.8vw;
+    font-size: clamp(0.7rem, 0.76vw, 0.84rem);
 }
 
 .skills-item.responsive-item .logos {
@@ -90,9 +90,9 @@
     }
 
     .skills-item {
-        font-size: 1vw;
-        width: 8vw;
-        height: 8vw;
+        font-size: clamp(0.76rem, 1vw, 0.9rem);
+        width: clamp(76px, 8vw, 100px);
+        height: clamp(76px, 8vw, 100px);
     }
 
     .skills-group h3 {
@@ -114,7 +114,7 @@
 
     .skillsContainer h1 {
         font-size: 4vh;
-        margin-top: 20vh;
+        margin-top: 8vh;
     }
 
     .skills-group h3 {
@@ -144,6 +144,7 @@
 
     .skillsContainer h1 {
         font-size: 3vh;
+        margin-top: 6vh;
     }
 
     .skills-item {
@@ -168,7 +169,7 @@
 
 @media (max-width: 420px) {
     .skillsContainer h1 {
-        margin-top: 15vh;
+        margin-top: 5vh;
         font-size: 3vh;
     }
 
