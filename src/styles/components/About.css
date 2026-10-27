@@ -158,12 +158,18 @@
         z-index: 1;
     }
 
-    .about-button {
+    .text-aboutme .about-button {
         position: relative;
         z-index: 2;
         max-width: 100%;
-        white-space: normal;
+        white-space: nowrap;
         box-sizing: border-box;
+        padding: 0.45rem 0.75rem;
+        font-size: 0.8rem;
+        width: auto;
+        text-align: center;
+        background: #292E47;
+        color: #dce9ff;
     }
 
     .text-aboutme h1 {
