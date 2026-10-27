@@ -180,11 +180,12 @@ nav button:hover .flag {
         justify-content: space-between;
         gap: 0.35rem;
         flex-wrap: nowrap;
+        box-sizing: border-box;
     }
 
     nav a {
-        font-size: 0.92rem;
-        padding: 0.3rem 0.28rem;
+        font-size: 0.82rem;
+        padding: 0.3rem 0.2rem;
     }
 
     .nav-label--full {
@@ -210,8 +211,8 @@ nav button:hover .flag {
     }
 
     nav a {
-        font-size: 0.88rem;
-        padding: 0.26rem 0.22rem;
+        font-size: 0.74rem;
+        padding: 0.26rem 0.14rem;
     }
 
     .logo {
@@ -219,6 +220,6 @@ nav button:hover .flag {
     }
 
     .flag {
-        width: 1.2rem;
+        width: 1.1rem;
     }
 }
