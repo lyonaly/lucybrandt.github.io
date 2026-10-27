@@ -104,7 +104,7 @@ export default function Experience({ lang, experienceRef, showAll = false, showE
     return (
         <section className="experience-detail" ref={experienceRef}>
             <div className="experience-heading-row">
-                <h1 className="headingdet">{lang === 'de' ? 'Meine Arbeitserfahrung' : 'My experiences'}</h1>
+                <h1 className="headingdet">{lang === 'de' ? 'Meine Arbeitserfahrung' : 'Work experiences'}</h1>
                 <a href={`/${resumeFile}`} download={resumeFile} className="experience-download-btn">
                     <svg className="experience-download-btn__icon" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 12.586V4a1 1 0 0 1 1-1ZM5 17a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z" />

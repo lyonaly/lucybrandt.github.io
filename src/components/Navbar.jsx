@@ -16,7 +16,7 @@ export default function Navbar({ lang, toggleLang, navigateToSection, activeSect
         ],
         en: [
             { full: 'About me', short: 'About' },
-            { full: 'Experiences', short: 'Work' },
+            { full: 'Work experiences', short: 'Work' },
             { full: 'Skills', short: 'Skills' },
             { full: 'Projects', short: 'Projects' },
             { full: 'Certificates', short: 'Certs' },
