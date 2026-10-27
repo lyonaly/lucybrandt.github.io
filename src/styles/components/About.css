@@ -158,6 +158,14 @@
         z-index: 1;
     }
 
+    .about-button {
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+        white-space: normal;
+        box-sizing: border-box;
+    }
+
     .text-aboutme h1 {
         font-size: 2.6rem;
         margin: 0.25rem 0 0.75rem;

@@ -49,6 +49,25 @@ nav ul {
     flex-wrap: wrap;
 }
 
+.nav-links {
+    order: 2;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    order: 3;
+}
+
+.language-toggle {
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
 nav ul li {
     display: flex;
     align-items: center;
@@ -166,21 +185,87 @@ nav button:hover .flag {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     nav {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: row;
+        gap: 0;
         padding: 0.75rem 4vw;
         background-color: #292E47;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        order: initial;
+        display: none;
         width: 100%;
-        justify-content: space-between;
+        box-sizing: border-box;
+        justify-content: initial;
         gap: 0.35rem;
         flex-wrap: nowrap;
+        padding: 0 4vw 0.5rem;
+        background-color: #292E47;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.2rem;
+        padding: 0.75rem 0 0.25rem;
+        border-top: 1px solid var(--line-color);
+    }
+
+    nav ul.is-open li {
+        width: 100%;
+    }
+
+    nav ul.is-open a {
+        justify-content: center;
+        width: 100%;
         box-sizing: border-box;
+    }
+
+    .navbar-actions {
+        width: auto;
+        justify-content: flex-end;
+        margin-left: auto;
+        order: initial;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.25rem;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.35rem;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--text-color);
+        transition: transform 180ms ease, opacity 180ms ease;
+    }
+
+    .menu-toggle.is-open span:nth-child(1) {
+        transform: translateY(0.35rem) rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+        transform: translateY(-0.35rem) rotate(-45deg);
     }
 
     nav a {
@@ -198,6 +283,10 @@ nav button:hover .flag {
 
     nav button {
         padding: 0;
+    }
+
+    .language-toggle {
+        order: 2;
     }
 
     .cv-download {
